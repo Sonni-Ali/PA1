@@ -1,0 +1,58 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		cadeia nome, resp, resp2
+		real num1,num2,soma,sub,mult,div
+    
+		limpa()
+		escreva("Qual é o seu nome?\n")
+		leia(nome)
+		escreva("Olá, " + nome + "! Vamos realizar alguns cálculos?\n")
+    leia(resp)
+    se (resp == "Sim" ou resp == "sim")
+        {
+        escreva("Digite um número.\n")
+		    leia(num1)
+		    escreva("Digite o segundo número.\n")
+		    leia(num2)
+		    soma=num1+num2
+		    sub=num1-num2
+		    mult=num1*num2
+		    div=num1/num2
+		    escreva("O resultado da soma desses dois números é " + soma + "\n")
+		    escreva("O resultado da subtração desses dois números, respectivamente, é " + sub + "\n")
+		    escreva("O resultado da multiplicação desses dois números é " + mult + "\n")
+		    escreva("O resultado da divisão desses dois números, respectivamente, é " + div + "\n")
+        }
+      se (resp == "Não" ou resp == "não")
+      {
+      escreva("Certo. Até a próxima!")
+      }
+    senao
+      {
+      escreva("Desculpe, não consegui compreender. Por gentileza, responda Sim ou Não. \n")
+      leia(resp2)
+      }
+    se (resp2 == "Sim" ou resp2 == "sim")
+      {
+      escreva("Digite um número.\n")
+		  leia(num1)
+		  escreva("Digite o segundo número.\n")
+		  leia(num2)
+		  soma=num1+num2
+		  sub=num1-num2
+		  mult=num1*num2
+		  div=num1/num2
+		  escreva("O resultado da soma desses dois números é " + soma + "\n")
+		  escreva("O resultado da subtração desses dois números, respectivamente, é " + sub + "\n")
+		  escreva("O resultado da multiplicação desses dois números é " + mult + "\n")
+		  escreva("O resultado da divisão desses dois números, respectivamente, é " + div + "\n")
+      }
+    se (resp2 == "Não" ou resp2 == "não")
+      {
+      escreva("Certo. Até a próxima!")
+      }
+	}
+}
